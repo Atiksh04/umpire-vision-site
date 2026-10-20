@@ -1,0 +1,32 @@
+/* Umpire Vision site: the game's navy and gold, Barlow Condensed for headings. */
+:root {
+  --bg: #0c0e14; --surface: #151824; --ink: #f4f1ea; --muted: #a3a6b4; --line: #262a3a;
+  --gold: #f7c21b; --red: #ee4b3a;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 40px max(20px, env(safe-area-inset-left)) 72px; }
+header.top { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+header.top img { width: 48px; height: 48px; border-radius: 12px; }
+.brand { font-family: var(--display); font-weight: 800; font-style: italic; font-size: 26px; letter-spacing: .02em; color: var(--gold); text-decoration: none; }
+.brand span { color: var(--ink); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(36px, 7vw, 52px); line-height: 1; text-transform: uppercase; margin: 0 0 8px; }
+h2 { font-family: var(--display); font-weight: 800; font-size: 24px; text-transform: uppercase; letter-spacing: .02em; margin: 36px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); }
+a { color: var(--gold); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); letter-spacing: .06em; text-transform: uppercase; font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+.email { font-family: ui-monospace, Menlo, monospace; color: var(--gold); }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 20px; }
+footer a { color: var(--muted); }
+.hero { display: flex; flex-direction: column; gap: 16px; padding: 24px 0; }
+.tag { font-family: var(--display); font-weight: 800; font-style: italic; font-size: 22px; letter-spacing: .08em; }
