@@ -29,7 +29,10 @@
   <p>We also record how the game is used, so we can make it better: when the app is opened, which screens are visited, and game events such as levels started and finished, calls made and replays used. These are tied to your account ID, never to your name or email, and include basic device details (model, operating system, language and time zone) and your approximate location (city and country), which PostHog works out from your internet address. We use PostHog for this, hosted in the United States. We don't record your screen or what you type.</p>
 
   <h2>What we don't collect</h2>
-  <p>We don't collect your precise (GPS) location, contacts, photos or files, advertising ID, or payment details. Share cards are made on your phone and handed to your phone's share sheet; they are never uploaded to us. If you tap Save, the card is added to your photos; the app never reads your photo library. Streak reminders are scheduled on your phone; we don't send push notifications.</p>
+  <p>We don't collect your precise (GPS) location, contacts, photos or files, advertising ID, or payment details. Share cards are made on your phone and handed to your phone's share sheet; they are never uploaded to us. If you tap Save, the card is added to your photos; the app never reads your photo library. Streak reminders are scheduled on your phone.</p>
+
+  <h2>Notifications</h2>
+  <p>If you allow notifications, the app saves a push token for your phone with your account, so we can send occasional game notifications (for example, a new real-match call or the daily over). We send them through Expo's push service, which passes them to Apple or Google. Turn them off any time in your phone's settings; logging out or deleting your account removes the token.</p>
 
   <h2>Who can see it</h2>
   <p>Other players see only your display name and score on leaderboards. If you haven't picked a name, a generated one such as "Umpire 4821" is shown instead. Nothing else about you is visible to other players.</p>
@@ -41,6 +44,7 @@
     <li><strong>Supabase</strong>: our database and accounts, hosted in Singapore.</li>
     <li><strong>Sign in with Apple</strong> and <strong>Google Sign-In</strong>: to sign you in.</li>
     <li><strong>PostHog</strong>: usage analytics, hosted in the United States.</li>
+    <li><strong>Expo</strong>, <strong>Apple Push Notification service</strong> and <strong>Firebase Cloud Messaging</strong>: to deliver notifications, if you allow them.</li>
     <li><strong>Apple App Store</strong> and <strong>Google Play</strong>: to deliver the app.</li>
   </ul>
   <p>All data travels encrypted (HTTPS).</p>
